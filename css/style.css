@@ -1,0 +1,20 @@
+body {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", serif;
+}
+
+h2 {
+  font-size: 21px;
+  font-style: bold;
+  color: #000000;
+}
+
+a.main-navigator-item {
+  font-size: 14px;
+  font-style: bold;
+  color: #000000;
+}
