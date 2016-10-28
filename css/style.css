@@ -2,19 +2,20 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #333333;
+  font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
-  font-family: "PT Sans", "Arial", serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 h2 {
   font-size: 21px;
-  font-style: bold;
+  font-weight: bold;
   color: #000000;
 }
 
 .interest {
   font-size: 30px;
-  font-style: bold;
+  font-weight: bold;
   color: #000000;
 }
