@@ -1,21 +1,255 @@
 body {
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
   color: #333333;
   font-weight: normal;
   font-style: normal;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
+  background-color: #ffffff;
 }
 
 h2 {
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   color: #000000;
+  text-align: center;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.index-logo {
+  position: absolute;
+  left: 45%;
+  top: 0;
+}
+
+.main-navigator {
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.main-navigator-item {
+  display: block;
+  width: 20%
+}
+
+.main-navigator-item a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.main-navigator-item:first-child,
+.main-navigator-item:nth-child(2) {
+  float: left;
+  text-align: left;
+}
+
+.main-navigator-item:last-child,
+.main-navigator-item:nth-child(3) {
+  float: right;
+  text-align: right;
+}
+
+.main-photo {
+  width: 100%;
+}
+
+.sedona-welcome {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 57px;
+  padding-bottom: 57px;
+
+}
+
+.reason {
+  display: inline-block;
+  float: left;
+  color: #ffffff;
+  width: 33.33%;
+  height: 256px;
+  background-color: #81b3d2;
+}
+
+.third-row > .reason {
+  float: right;
+}
+
+.reason-name {
+  width: 50%;
+  color: #ffffff;
+  margin-top: 46px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reason-number {
+  margin-left: auto;
+  margin-top: 29px;
+  margin-right: auto;
+}
+
+.reason-description {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 32 px;
+}
+
+.reason-place {
+  float: right;
+  display: inline-block;
+  background-color: red;
+  width: 66.67%;
+  height: 256px;
+}
+
+.third-row > .reason-place {
+  float: left;
+}
+
+
+.reason-place img {
+  width: 100%;
+}
+
+.reason-motivation {
+  display: inline-block;
+  float: left;
+  width: 33.33%;
+  background-color: #ffffff;
+  height: 330px;
+}
+
+.reason-motivation:last-child {
+  float: right;
+}
+
+.motivation-name {
+  margin-top: 164px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 18px;
+}
+
+.motivation-description {
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 29px;
+}
+
+.fourth-row .reason {
+  background-color: #eeeeee;
+}
+
+.fourth-row .reason-name {
+  width: 66%;
+  color: #000000;
+}
+
+.fourth-row .reason-number,
+.fourth-row .reason-description {
+  color: #333333;
+}
+
+.booking {
+  background-color: #ffffff;
+  height: 286px;
+  width: 100%;
+  float: left;
 }
 
 .interest {
   font-size: 30px;
   font-weight: bold;
   color: #000000;
+  margin-top: 57px;
+}
+
+.booking-description {
+  line-height: 24px;
+  color: #333333;
+  width: 464px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ordering {
+  display: block;
+  margin-top: 54px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 564px;
+  height: 86px;
+  background-color: #766357;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+}
+
+.booking-form {
+  width: 564px;
+  height: 395px;
+  background-color: #000000;
+}
+
+.map {
+  display: inline-block;
+  width: 100%;
+  height: 473px;
+  background-color: #cbdda9;
+}
+
+footer {
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  height: 120px;
+  background-color: fdfdfd;
+}
+
+section {
+  width: 33.33%;
+}
+
+.footer-visit {
+  float: left;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer-social {
+  float: left;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.footer-copyright {
+  float: right;
+  margin-top: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 21px;
+  font-weight: bold;
 }
