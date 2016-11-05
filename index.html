@@ -32,25 +32,26 @@
 
       <main>
         <div class="main-photo">
-          <img src="img/main-photo.jpg" alt="горный пейзаж Седоны">
+          <img src="img/main-photo.jpg" width="100%" height="508px" alt="горный пейзаж Седоны">
         </div>
         <div class="sedona-welcome">
-          <h2 class="welcome-slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="welcome-slogan">Седона - небольшой городок в Аризоне,<br>
+            заслуживающий большего!</h2>
           <p class="welcome-reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
-        <div class="reasons-box first-row">
+        <div class="reasons-box clearfix">
           <div class="reason">
             <h2 class="reason-name">Настоящий городок</h2>
             <p class="reason-number">- №1 -</p>
             <p class="reason-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="reason-place">
-            <img src="img/sedona-photo-1.jpg" width="67%" alt="Отель Седоны">
+            <!-- <img src="img/sedona-photo-1.jpg" width="880px" height="256px" alt="Отель Седоны"> -->
           </div>
         </div>
 
-        <div class="reasons-line second-row">
+        <div class="reasons-line clearfix">
           <div class="reason-motivation">
             <h2 class="motivation-name">Жилье</h2>
             <p class="motivation-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -65,9 +66,9 @@
           </div>
         </div>
 
-        <div class="reasons-box third-row">
+        <div class="reasons-box second-reason clearfix">
           <div class="reason-place">
-            <img src="img/sedona-photo-2.jpg" alt="Мост Дьявола">
+            <!-- <img src="img/sedona-photo-2.jpg" alt="Мост Дьявола"> -->
           </div>
           <div class="reason">
             <h2 class="reason-name">Там есть мост дьявола</h2>
@@ -76,7 +77,7 @@
           </div>
         </div>
 
-        <div class="reasons-box fourth-row">
+        <div class="reasons-box third-reason clearfix">
           <div class="reason">
             <h2 class="reason-name">Небольшая площадь</h2>
             <p class="reason-number">- №3 -</p>
@@ -102,7 +103,7 @@
           <div class="booking-form">
             <form action="https://echo.htmlacademy.ru" method="post">
               <div class="ordering-line">
-                <label for="arrival-field">Дата заезда</label>
+                <label class="label-form" for="arrival-field">Дата заезда</label>
                 <div class="ordering-field">
                   <input type="text" name="arrival" id="arrival-field" value="24 апреля 2016">
                   <div class="calendar-iсons">
@@ -110,7 +111,7 @@
                 </div>
               </div>
               <div class="ordering-line">
-                <label class="label-left" for="departure-field">Дата выезда</label>
+                <label class="label-form" for="departure-field">Дата выезда</label>
                 <div class="ordering-field">
                   <input type="text" name="departure" id="departure-field" value="4 июля 2016">
                   <div class="calendar-iсons">
@@ -118,19 +119,21 @@
               </div>
               </div>
               <div class="ordering-line">
-                <label class="label-left" for="adults-field">Взрослые:</label>
-                <div class="ordering-people-field">
-                  <span class="number">-</span>
-                  <input class="number-of" type="number" name="adults" id="adults-field" value="2">
-                  <span class="number">+</span>
+                <div class="ordering-people-line">
+                  <label class="label-form" for="adults-field">Взрослые:</label>
+                  <div class="ordering-people-field">
+                    <span class="number">-</span>
+                    <input class="number-of" type="number" name="adults" id="adults-field" value="2">
+                    <span class="number">+</span>
+                  </div>
                 </div>
-              </div>
-              <div class="ordering-line">
-                <label class="label-right" for="children-field">Дети:</label>
-                <div class="ordering-people-field">
-                  <span class="number">-</span>
-                  <input class="number-of" type="number" name="children" id="children-field" value="0">
-                  <span class="number">-</span>
+                <div class="ordering-people-line">
+                  <label class="label-form" for="children-field">Дети:</label>
+                  <div class="ordering-people-field">
+                    <span class="number">-</span>
+                    <input class="number-of" type="number" name="children" id="children-field" value="0">
+                    <span class="number">-</span>
+                  </div>
                 </div>
               </div>
               <button class="btn" type="submit">Найти</button>
@@ -142,7 +145,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer class="clearfix">
         <section class="footer-visit">
           #VISITSEDONA
         </section>
