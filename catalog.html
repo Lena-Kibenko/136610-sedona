@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <div  class="container">
       <header>
         <div class="index-logo">
-          <img src="img/index-logo.png" width="128" height="71" alt="Sity of Sedona">
+          <img src="img/index-logo.png" width="138px" height="70px" alt="Sity of Sedona">
         </div>
         <nav class="main-navigator">
           <ul class="main-navigator-menu">
@@ -68,27 +69,27 @@
 
               <div class="right-column">
                 <h2 class="column-name">Cтоимость в сутки (р):</h2>
-                <div class="radio-number">
-                  <div class="radio-number-cell">
-                    <span class="radio-number-setting">от</span>
-                    <input type="radio" name="radio-number-setting" value="0">
+                <div class="range-hotels">
+                  <div class="range-hotel-cell">
+                    <label class="range-hotel-price" for="range-hotel-min-field">от</label>
+                    <input type="text" name="range-hotel-min" id="range-hotel-min-field" value="0">
                   </div>
-                  <div class="radio-number-cell">
-                    <span class="radio-number-setting">до</span>
-                    <input type="radio" name="radio-number-setting" value="3000">
-                  </div>
-                </div>
-                <div class="radio-slider">
-                  <div class="slider-round">
-                  </div>
-                  <div class="slider-round">
-                  </div>
-                  <div class="slider-line min">
-                  </div>
-                  <div class="slider-line max">
+                  <div class="range-hotel-cell">
+                    <label class="range-hotel-price" for="range-hotel-min-field">до</label>
+                    <input type="text" name="range-hotel-max" id="range-hotel-max-field" value="3000">
                   </div>
                 </div>
-                <button class="btn" type="submit">Показать</button>
+                <div class="controls-slider">
+                  <div class="slider-line-min">
+                  </div>
+                  <div class="slider-line-max">
+                  </div>
+                  <div class="slider-round slider-round-min">
+                  </div>
+                  <div class="slider-round slider-round-max">
+                  </div>
+                </div>
+                <button class="btn-renge" type="submit">Показать</button>
               </div>
             </form>
           </div>
@@ -97,11 +98,11 @@
         <div class="search-result-menu">
           <div class="container-helper clearfix">
             <div class="search-result found">Найдено: 3</div>
-            <div class="search-result sorting">Cортировка:</div>
             <div class="search-result collating">
-              <a href="#">по цене</a>
-              <a href="#">по типу</a>
-              <a href="#">по рейтингу</a>
+              <div class="sorting">Cортировка:</div>
+              <a class="sorting" href="#">по цене</a>
+              <a class="sorting" href="#">по типу</a>
+              <a class="sorting" href="#">по рейтингу</a>
             </div>
             <div class="search-result arrow">
               <a href="#">
@@ -123,7 +124,7 @@
             </div>
             <div class="hotel-info">
               <h2 class="hotel-name">Amara Resort &#38; SPA</h2>
-              <div class="hotel-container clearfix">
+              <div class="hotel-container">
                 <div class="type-and-price">
                   <span class="type-and-price-name">Гостиница</span>
                   <a href="#" class="type-and-price-btn type">Подробнее</a>
@@ -146,7 +147,7 @@
           <div class="container-helper clearfix">
             <div class="hotel-photo">
               <a href="#">
-                <img src="img/desert.jpg" alt="Мотель Desert Quail INN">
+                <img src="img/desert.jpg" width="135px" height="90px" alt="Мотель Desert Quail INN">
               </a>
             </div>
             <div class="hotel-info">
@@ -174,7 +175,7 @@
           <div class="container-helper clearfix">
             <div class="hotel-photo">
               <a href="#">
-                <img src="img/villas.jpg" alt="Апартаменты Villas at Poco Diablo">
+                <img src="img/villas.jpg" width="135px" height="90px" alt="Апартаменты Villas at Poco Diablo">
               </a>
             </div>
             <div class="hotel-info">
