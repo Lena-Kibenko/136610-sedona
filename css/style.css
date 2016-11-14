@@ -86,8 +86,14 @@ li.main-navigator-item:last-child {
 
 img {
   max-width: 100%;
-  height: center;
+  height: auto;
+  align: middle;
 }
+
+/*.reason-place img {
+  position: relative;
+  top: -72px;
+}*/
 
 .sedona-welcome {
   outline: 1px yellow solid;
@@ -130,7 +136,7 @@ img {
   color: #ffffff;
   width: 33.33%;
   background-color: #81b3d2;
-  padding-top: 58px;
+  padding-top: 57px;
   padding-bottom: 50px;
 }
 
@@ -140,6 +146,7 @@ img {
 
 .reason-place {
   float: right;
+  background: #a5ca50 url(../img/sedona-photo-1.jpg) center center no-repeat;
   outline: 1px green solid;
   width: 66.67%;
   height: 256px;
@@ -147,6 +154,7 @@ img {
 
 .second-reason .reason-place {
   float: left;
+  background: #a5ca50 url(../img/sedona-photo-2.jpg) center center no-repeat;
 }
 
 .reason-name {
@@ -229,7 +237,7 @@ img {
 
 .third-reason .reason {
   background-color: #eeeeee;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 59px;
 }
 
@@ -279,14 +287,15 @@ img {
   display: inline-block;
   text-align: center;
   width: 568px;
-  height: 24px;
+  /*height: 24px;*/
   background-color: #766357;
   color: #ffffff;
   font-size: 21px;
+  line-height: 26px;
   text-decoration: none;
   font-weight: bold;
   vertical-align: middle;
-  padding-top: 32px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -294,7 +303,6 @@ img {
   outline: 1px green solid;
   position: absolute;
   width: 568px;
-  height: 395px;
   left: 50%;
   margin-left: -284px;
   background-color: #ffffff;
@@ -398,7 +406,7 @@ vertical-align: top;
   width: 228px;
   height: 38px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 0;
   line-height: 0;
 }
@@ -415,7 +423,7 @@ vertical-align: top;
 
 .ordering-people-field {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 114px;
   font-size: 0;
   margin-right: 0;
@@ -446,16 +454,14 @@ vertical-align: top;
 footer {
   outline: 1px yellow solid;
   width: 100%;
-  height: 120px;
+  padding-top: 36px;
+  padding-bottom: 36px;
   background-color: fdfdfd;
 }
 
 footer section {
   outline: 1px green solid;
   width: 33.33%;
-  /*min-height: 48px;*/
-  padding-top: 36px;
-  padding-bottom: 36px;
 }
 
 .footer-visit {
@@ -464,9 +470,9 @@ footer section {
   line-height: 26px;
   font-weight: bold;
   text-align: center;
-  vertical-align: bottom;
-  padding-top: 48px;
+  padding-top: 11px;
   outline: 1px red solid;
+  width: 33.34%;
 }
 
 .footer-social {
@@ -488,17 +494,38 @@ footer section {
 
 .footer-copyright {
   float: right;
+  text-align: center;
+  font-size: 0;
+  vertical-align: middle;
+  padding-top: 4px;
+}
+
+.footer-copyright span {
+  display: inline-block;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
-  text-align: center;
+  text-align: right;
+  vertical-align: middle;
+  outline: 1px green solid;
+  margin-right: 8px;
+}
+
+.btn-htmlacademy {
+  display: inline-block;
+  vertical-align: middle;
+  width: 113px;
+  height: 40px;
+  font-size: 0;
+  background: url(../img/icon-htmlacademy.png);
+  outline: 1px green solid;
 }
 
 .choice-hotel {
   outline: 1px yellow solid;
   height: 217px;
   width: 100%;
-  background: #38617f url(../img/choice-hotel-fon.jpg) no-repeat center center;
+  background: #38617f url(../img/choice-hotel-fon.jpg) no-repeat  no-repeat center center;
 }
 
 .container-helper {
@@ -510,7 +537,7 @@ footer section {
 .left-column {
   float: left;
   outline: 1px red solid;
-  padding-top: 27px;
+  padding-top: 28px;
   color: #ffffff;
   width: 20%;
   vertical-align: top;
@@ -549,22 +576,26 @@ footer section {
 }
 
 .right-column .column-name{
-  margin-bottom: 8px;
+  margin-bottom: 9px;
 }
 
 .check-line {
   display: inline-block;
   outline: 1px blue solid;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
   text-align: left;
   vertical-align: top;
   width: 100%;
 }
 
+.check-line:last-child {
+  margin-bottom: 0;
+}
+
 .right-column {
   float: right;
   outline: 1px red solid;
-  padding-top: 30px;
+  padding-top: 28px;
   width: 328px;
 }
 
@@ -578,9 +609,11 @@ footer section {
 }
 
 .range-hotels {
-  height: 32px;
+  position: relative;
+  /*height: 32px;*/
   margin-bottom: 20px;
   margin-left: 10px;
+  padding-bottom: 5px;
   border: 2px #ffffff solid;
   border-radius: 2px;
   font-size: 0;
@@ -594,7 +627,6 @@ footer section {
   font-size: 0;
   outline: 1px red solid;
   text-align: center;
-  min-height: 30px;
   padding-top: 7px;
 }
 
@@ -682,9 +714,9 @@ footer section {
   display: block;
   margin: 0 auto;
   width: 133px;
-  height: 34px;
   padding: 6px 35px;
   background: none;
+  font-weight: normal;
   border: 2px #ffffff solid;
   border-radius: 2px;
   color: #ffffff;
@@ -712,11 +744,13 @@ footer section {
   color: #000000;
   margin-right: 50px;
   outline: 1px blue solid;
+  vertical-align: middle;
 }
 
 a.sorting {
   color: rgba(0, 0, 0, 0.3);
   text-decoration-color: #81b3d2;
+  vertical-align: middle;
 }
 
 a.sorting:hover {
@@ -884,14 +918,17 @@ a.price {
 .stardom-rating {
   outline: 1px red solid;
   float: right;
+  /*width: 112px;*/
 }
 
 .stardom {
+  /*display: inline-block;*/
+  text-align: right;
   outline: 1px red solid;
-  width: 96px;
+  /*width: 112px;*/
   height: 16px;
   background-color: #81b3d2;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .rating {
@@ -900,5 +937,8 @@ a.price {
   font-size: 14px;
   line-height: 21px;
   display: block;
-  text-align: left;
+  width: 112px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
