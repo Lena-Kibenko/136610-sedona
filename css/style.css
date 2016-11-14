@@ -86,7 +86,7 @@ li.main-navigator-item:last-child {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: center;
 }
 
 .sedona-welcome {
@@ -414,6 +414,8 @@ vertical-align: top;
 }
 
 .ordering-people-field {
+  display: inline-block;
+  vertical-align: top;
   width: 114px;
   font-size: 0;
   margin-right: 0;
