@@ -11,7 +11,7 @@
     <div  class="container">
       <header>
         <div class="index-logo">
-          <img src="img/index-logo.png" width="138px" height="70px" alt="Sity of Sedona">
+          <img src="img/index-logo.png" width="138" height="70" alt="Sity of Sedona">
         </div>
         <nav class="main-navigator">
           <ul class="main-navigator-menu">
@@ -68,25 +68,21 @@
               </div>
 
               <div class="right-column">
-                <h2 class="column-name">Cтоимость в сутки (р):</h2>
-                <div class="range-hotels">
+                <h2 class="column-name">Стоимость в сутки (р):</h2>
+                <div class="filter-range">
                   <div class="range-hotel-cell">
-                    <label class="range-hotel-price" for="range-hotel-min-field">от</label>
-                    <input type="text" name="range-hotel-min" id="range-hotel-min-field" value="0">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
                   </div>
-                  <div class="range-hotel-cell">
-                    <label class="range-hotel-price" for="range-hotel-min-field">до</label>
-                    <input type="text" name="range-hotel-max" id="range-hotel-max-field" value="3000">
-                  </div>
-                </div>
-                <div class="controls-slider">
-                  <div class="slider-line-min">
-                  </div>
-                  <div class="slider-line-max">
-                  </div>
-                  <div class="slider-round slider-round-min">
-                  </div>
-                  <div class="slider-round slider-round-max">
+                  <div class="range-hotel-slider">
+                    <div class="slider-line-size">
+                      <div class="slider-line-segment">
+                      </div>
+                    </div>
+                    <div class="slider-round slider-round-min">
+                    </div>
+                    <div class="slider-round slider-round-max">
+                    </div>
                   </div>
                 </div>
                 <button class="btn-renge" type="submit">Показать</button>
@@ -96,19 +92,19 @@
         </div>
 
         <div class="search-result-menu">
-          <div class="container-helper clearfix">
-            <div class="search-result found">Найдено: 3</div>
-            <div class="search-result collating">
+          <div class="container-helper">
+            <div class="search-result">
+              <div class="found">Найдено: 3</div>
               <div class="sorting">Cортировка:</div>
               <a class="sorting" href="#">по цене</a>
               <a class="sorting" href="#">по типу</a>
               <a class="sorting" href="#">по рейтингу</a>
             </div>
-            <div class="search-result arrow">
-              <a href="#">
+            <div class="search-leaf">
+              <a class="arrow" href="#">
                 <!-- <img src="img/icon-arrow.png" alt="вверх"> -->
               </a>
-              <a href="#">
+              <a class="arrow" href="#">
                 <!-- <img src="img/icon-arrow.png" alt="вниз"> -->
               </a>
             </div>
@@ -119,7 +115,7 @@
           <div class="container-helper clearfix">
             <div class="hotel-photo">
               <a href="#">
-                <img src="img/amara.jpg" width="135px" height="90px" alt="Гостиница Amara Resort and SPA">
+                <img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort and SPA">
               </a>
             </div>
             <div class="hotel-info">
@@ -147,7 +143,7 @@
           <div class="container-helper clearfix">
             <div class="hotel-photo">
               <a href="#">
-                <img src="img/desert.jpg" width="135px" height="90px" alt="Мотель Desert Quail INN">
+                <img src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail INN">
               </a>
             </div>
             <div class="hotel-info">
@@ -175,7 +171,7 @@
           <div class="container-helper clearfix">
             <div class="hotel-photo">
               <a href="#">
-                <img src="img/villas.jpg" width="135px" height="90px" alt="Апартаменты Villas at Poco Diablo">
+                <img src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
               </a>
             </div>
             <div class="hotel-info">
@@ -200,17 +196,17 @@
         </article>
       </main>
 
-      <footer class="clearfix">
-        <section class="footer-visit">
+      <footer>
+        <section class="footer-block footer-visit">
           #VISITSEDONA
         </section>
-        <section class="footer-social">
+        <section class="footer-block footer-social">
           <a class="social-btn social-btn-vk" href="#">В контакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </section>
-        <section class="footer-copyright">
-          <span>website by</span><a class="btn-htmlacademy" href="https://htmlacademy.ru">Html Academy</a>
+        <section class="footer-block footer-copyright">
+          website by<a class="btn-htmlacademy" href="https://htmlacademy.ru">Html Academy</a>
         </section>
       </footer>
    </div>
