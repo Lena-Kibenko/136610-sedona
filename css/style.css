@@ -1062,6 +1062,10 @@ a.sorting-active {
   border-top: 1px #e5e5e5 solid;
 }
 
+.hotel-item:last-child {
+  padding-bottom: 150px;
+}
+
 .hotel-photo {
   float: left;
   /*outline: 1px red solid;*/
@@ -1078,7 +1082,7 @@ a.sorting-active {
 
 .stardom-rating {
   float: right;
-  outline: 1px red solid;
+  /*outline: 1px red solid;*/
 }
 
 .hotel-name {
@@ -1219,16 +1223,10 @@ a.price {
 }*/
 
 
-.stardom-rating {
-  outline: 1px red solid;
-  float: right;
-  /*width: 112px;*/
-}
-
 .stardom {
   /*display: inline-block;*/
   /*text-align: right;*/
-  outline: 1px red solid;
+  /*outline: 1px red solid;*/
   /*margin-left: 72px;*/
   /*width: 112px;*/
   height: 16px;
@@ -1266,7 +1264,7 @@ a.price {
 
 
 .rating {
-  outline: 1px red solid;
+  /*outline: 1px red solid;*/
   color: #666666;
   font-size: 14px;
   line-height: 21px;
