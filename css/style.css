@@ -22,16 +22,18 @@ body {
 
 .container {
   position: relative;
-  width: 1200px;
+  min-width: 768px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 0px 15px 5px rgba(0, 1, 1, 0.2);
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  /*max-width: 100%;*/
+  height: 100%;
   align: middle;
+  outline: 1px red solid;
 }
 
 .index-logo {
@@ -99,20 +101,27 @@ li.main-navigator-item:last-child {
 .main-photo {
   position: relative;
   z-index: 1;
-  width: 100%;
   height: 508px;
-  background-size: cover;
   background-color: #88b2d2;
+  outline: 1px red solid;
+  overflow: hidden;
 }
 
-.main-photo::before {
+.main-photo img{
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.main-photo::after {
   content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 57px;
-  background-image: url("../img/mask.png");
-  background-repeat: no-repeat;
+  background: url("../img/mask.png") no-repeat center;
+  outline: 1px red solid;
+  z-index: 8;
 }
 
 .sedona-welcome {
@@ -137,9 +146,14 @@ li.main-navigator-item:last-child {
   text-align: center;
 }
 
-/*.reasons-box {
-  outline: 1px yellow solid;
-}*/
+.reasons-box {
+  /*outline: 1px yellow solid;*/
+  background-color: #81b3d2;
+}
+
+.third-reason {
+  background-color: #eeeeee;
+}
 
 .clearfix::after {
   content: "";
@@ -151,7 +165,7 @@ li.main-navigator-item:last-child {
   float: left;
   width: 33.33%;
   padding-top: 57px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -160,16 +174,30 @@ li.main-navigator-item:last-child {
   float: right;
 }
 
+/*.reason-place {
+  float: right;
+  width: 66.67%;
+  min-height: 256px;
+  overflow: hidden;
+  position: relative;
+}
+
+.reason-place img {
+  display: block;
+  position: absolute;
+  clip: auto;
+}*/
+
 .reason-place {
   float: right;
   width: 66.67%;
-  height: 256px;
-  background: #88b2d2 url("../img/sedona-photo-1.jpg") center no-repeat;
+  min-height: 256px;
+  background: #88b2d2 url("../img/sedona-photo-1.jpg") no-repeat center;
 }
 
 .second-reason .reason-place {
   float: left;
-  background: #88b2d2 url("../img/sedona-photo-2.jpg") center no-repeat;
+  background: #88b2d2 url("../img/sedona-photo-2.jpg") no-repeat center;
 }
 
 .reason-name {
@@ -189,13 +217,15 @@ li.main-navigator-item:last-child {
 }
 
 .reason-description {
-  width: 315px;
+  width: 75%;
+  min-height: 82px;
   margin: 0 auto;
   text-align: center;
 }
 
 .third-reason .reason-description {
-  width: 270px;
+  /*width: 80%;*/
+  word-wrap: break-word;
 }
 
 /*.reasons-line {
@@ -206,7 +236,7 @@ li.main-navigator-item:last-child {
   float: left;
   width: 33.33%;
   padding-top: 164px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
   background-color: #ffffff;
 }
 
@@ -228,7 +258,8 @@ li.main-navigator-item:last-child {
 
 .motivation-description {
   position: relative;
-  width: 290px;
+  width: 73%;
+  min-height: 112px;
   margin: 0 auto;
   text-align: center;
 }
@@ -265,7 +296,7 @@ li.main-navigator-item:last-child {
 
 .third-reason .reason {
   padding-top: 48px;
-  padding-bottom: 59px;
+  padding-bottom: 19px;
   background-color: #eeeeee;
 }
 
@@ -668,12 +699,16 @@ footer {
 
 .left-column {
   float: left;
-  /*outline: 1px red solid;*/
+  outline: 1px red solid;
   padding-top: 28px;
   color: #ffffff;
-  width: 20%;
+  width: 150px;
   vertical-align: top;
-  margin-right: 44px;
+  margin-right: 90px;
+}
+
+.left-column:nth-child(2) {
+  margin-right: 0;
 }
 
 input[type="checkbox"] {
@@ -738,7 +773,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 .column-name {
   font-size: 16px;
   line-height: 21px;
-  /*outline: 1px blue solid;*/
+  outline: 1px blue solid;
   margin-top: 0;
   margin-bottom: 22px;
   text-align: left;
@@ -763,9 +798,9 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .right-column {
   float: right;
-  /*outline: 1px red solid;*/
+  outline: 1px red solid;
   padding-top: 28px;
-  width: 328px;
+  width: 30%;
   color: #ffffff;
 }
 
@@ -779,7 +814,7 @@ input[type="checkbox"]:checked:disabled + label::after {
 }
 
 .filter-range {
-  margin-left: 10px;
+  margin-left: 3%;
   /*outline: 1px red solid;*/
 }
 
@@ -816,20 +851,20 @@ input[type="checkbox"]:checked:disabled + label::after {
 
 .range-hotel-cell .min-price {
   /*outline: 1px red solid;*/
-  width: 90px;
-  padding-left: 65px;
+  width: 33%;
+  padding-left: 19%;
   /*margin-right: 2px;*/
 }
 
 .range-hotel-cell .max-price {
   /*outline: 1px red solid;*/
-  width: 90px;
-  padding-left: 56px;
+  width: 33%;
+  padding-left: 15%;
 }
 
 .range-hotel-cell input {
   /*outline: 1px red solid;*/
-  width: 50px;
+  width: 55%;
   margin: 0;
 
   color: inherit;
@@ -963,64 +998,41 @@ a.sorting-active {
 }
 
 .search-leaf {
-  /*outline: 1px red solid;*/
   float: right;
   margin-right: 0;
-  width: 48px;
-  height: 24px;
+  /*height: 24px;*/
+  padding-top: 4px;
   font-size: 0;
-  /*position: relative;*/
+  line-height: 0;
+  vertical-align: middle;
 }
 
 .arrow {
   display: inline-block;
-  width: 24px;
-  height: 24px;
-  position: relative;
-  /*outline: 1px red solid;*/
-}
-
-.arrow::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 0;
+  vertical-align: middle;
   width: 12px;
   height: 12px;
-  transform: translate(0, -50%);
+  outline: 1px red solid;
   background-image: url("../img/sprite-sedona-2.png");
   background-repeat: no-repeat;
   background-position: -10px -10px;
-  /*background-position: -3px -5px;*/
 }
 
-.arrow:last-child::before {
+
+.arrow:last-child {
   background-image: url("../img/sprite-sedona-2-1.png");
   background-repeat: no-repeat;
   background-position: -73px -10px;
+  margin-left: 13px;
 }
 
-.arrow-active:hover::before {
+.arrow-active:hover {
   background-position: -113px -10px;
 }
 
-.arrow-active:active::before {
+.arrow-active:active {
   background-position: -42px -10px;
 }
-
-/*.arrow-active::before {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 12px;
-  height: 12px;
-
-  transform: rotate(180deg)
-  background-image: url("../img/sprite-sedona-2.png");
-  background-repeat: no-repeat;
-  background-position: -42px -10px;
-}*/
 
 .hotel-item {
   /*outline: 1px yellow solid;*/
@@ -1059,7 +1071,10 @@ a.sorting-active {
 
 .stardom-rating {
   float: right;
-  /*outline: 1px red solid;*/
+  outline: 1px red solid;
+  font-size: 0;
+  line-height: 0;
+  text-align: right;
 }
 
 .hotel-name {
@@ -1067,8 +1082,6 @@ a.sorting-active {
   top: -3px;
   font-size: 21px;
   line-height: 21px;
-  margin-top: 0;
-  margin-bottom: 7px;
   /*outline: 1px blue solid;*/
   text-align: left;
   text-decoration: none;
@@ -1085,9 +1098,10 @@ a.sorting-active {
 }
 
 .hotel-container {
-  /*outline: 1px blue solid;*/
+  outline: 1px blue solid;
   font-size: 0;
   line-height: 0;
+  margin-top: 5px;
 }
 
 .type-and-price {
@@ -1095,8 +1109,6 @@ a.sorting-active {
   width: 110px;
   text-align: left;
   font-size: 0;
-  /*margin-right: 6px;*/
-  /*outline: 1px blue solid;*/
 }
 
 .type-and-price:first-child {
@@ -1157,57 +1169,12 @@ a.sorting-active {
   background-color: #503e33;
 }
 
-/*
-
-.hotel-container {
-  outline: 1px blue solid;
-  font-size: 0;
-}
-
-.type-and-price {
-  float: left;
-  outline: 1px #821b81 solid;
-  width: 110px;
-  margin-right: 6px;
-}
-
-.type-and-price-name {
-  float: left;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: left;
-  margin-bottom: 16px;
-}
-
-a.type {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3px 0;
-  background-color: #81b3d2;
-  color: #ffffff;
-  display: inline-block;
-}
-
-a.price {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 3px 0px;
-  background-color: #766357;
-  color: #ffffff;
-  display: inline-block;
-}*/
-
-
 .stardom {
-  /*display: inline-block;*/
+  display: inline-block;
   /*text-align: right;*/
   /*outline: 1px red solid;*/
   /*margin-left: 72px;*/
-  /*width: 112px;*/
+  /*width: 90px;*/
   height: 16px;
   /*background-color: #81b3d2;*/
   margin-bottom: 47px;
@@ -1217,15 +1184,15 @@ a.price {
 }
 
 .four-stars {
-  margin-left: 24px;
+  width: 90px;
 }
 
 .two-stars {
-  margin-left: 72px;
+  width: 42px;
 }
 
 .three-stars {
-  margin-left: 48px;
+  width: 65px;
 }
 
 
