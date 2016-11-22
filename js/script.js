@@ -11,7 +11,7 @@ var storage = localStorage.getItem("children");
 
 if (popup) {
   popup.classList.add("booking-form-close");
-  }
+}
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
