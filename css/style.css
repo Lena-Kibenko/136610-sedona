@@ -237,7 +237,7 @@ li.main-navigator-item:last-child {
   width: 70px;
   height: 78px;
   margin-left: -35px;
-  background: url("../img/sprite-sedona-2.png") no-repeat center;
+  background: url("../img/sprite-sedona.png") no-repeat center;
 }
 
 .house::before {
@@ -330,7 +330,7 @@ li.main-navigator-item:last-child {
 
 @keyframes leave {
   0%   {
-    transform: translateY(-300px);
+    transform: translateY(-280px);
   }
   70%  {
     transform: translateY(30px);
@@ -345,31 +345,25 @@ li.main-navigator-item:last-child {
 
 @keyframes swing {
   20% {
-    -webkit-transform: rotate3d(0, 0, 1, 15deg);
     transform: rotate3d(0, 0, 1, 15deg);
   }
 
   40% {
-    -webkit-transform: rotate3d(0, 0, 1, -10deg);
     transform: rotate3d(0, 0, 1, -10deg);
   }
 
   60% {
-    -webkit-transform: rotate3d(0, 0, 1, 5deg);
     transform: rotate3d(0, 0, 1, 5deg);
   }
 
   80% {
-    -webkit-transform: rotate3d(0, 0, 1, -5deg);
     transform: rotate3d(0, 0, 1, -5deg);
   }
 
   to {
-    -webkit-transform: rotate3d(0, 0, 1, 0deg);
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-
 
 .booking-form-close {
   display: none;
@@ -451,7 +445,7 @@ li.main-navigator-item:last-child {
   width: 24px;
   height: 24px;
   padding: 7px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -138px -4px;
+  background: url("../img/sprite-sedona.png") no-repeat -138px -4px;
 }
 
 .calendar-iсons:hover {
@@ -489,7 +483,7 @@ li.main-navigator-item:last-child {
   left: 50%;
   width: 14px;
   height: 14px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -250px -55px;
+  background: url("../img/sprite-sedona.png") no-repeat -250px -55px;
   transform: translate(-50%, -50%);
 }
 
@@ -500,7 +494,7 @@ li.main-navigator-item:last-child {
   left: 50%;
   width: 14px;
   height: 14px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -276px -234px;
+  background: url("../img/sprite-sedona.png") no-repeat -276px -234px;
   transform: translate(-50%, -50%);
 }
 
@@ -580,6 +574,7 @@ li.main-navigator-item:last-child {
 
 footer {
   position: absolute;
+  z-index: 10;
   bottom: 0;
   width: 100%;
   padding-top: 36px;
@@ -614,7 +609,7 @@ footer {
   margin-right: 6px;
   padding: 9px 8px;
   vertical-align: top;
-  background: #81b3d2 url("../img/sprite-sedona-2.png") no-repeat;
+  background: #81b3d2 url("../img/sprite-sedona.png") no-repeat;
 }
 
 .social-btn-tw {
@@ -662,7 +657,7 @@ footer {
   margin-left: 8px;
   font-size: 0;
   vertical-align: middle;
-  background: url("../img/sprite-sedona-2.png") no-repeat -10px -200px;
+  background: url("../img/sprite-sedona.png") no-repeat -10px -200px;
 }
 
 .btn-htmlacademy:hover {
@@ -722,7 +717,7 @@ input[type="checkbox"] + label::before {
   display: block;
   width: 28px;
   height: 25px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -279px -10px;
+  background: url("../img/sprite-sedona.png") no-repeat -279px -10px;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -733,7 +728,7 @@ input[type="checkbox"]:checked + label::after {
   display: block;
   width: 28px;
   height: 25px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -12px -55px;
+  background: url("../img/sprite-sedona.png") no-repeat -12px -55px;
 }
 
 input[type="checkbox"]:hover + label::before {
@@ -966,12 +961,12 @@ a.sorting-active {
   width: 12px;
   height: 12px;
   vertical-align: middle;
-  background: url("../img/sprite-sedona-2.png") no-repeat -10px -10px;
+  background: url("../img/sprite-sedona.png") no-repeat -10px -10px;
 }
 
 .arrow:last-child {
   margin-left: 13px;
-  background: url("../img/sprite-sedona-2.png") no-repeat -73px -10px;
+  background: url("../img/sprite-sedona.png") no-repeat -73px -10px;
 }
 
 .arrow-active:hover {
