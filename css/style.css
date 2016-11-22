@@ -612,6 +612,7 @@ li.main-navigator-item:last-child {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -621,7 +622,7 @@ li.main-navigator-item:last-child {
 
 .btn:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
+  background-color: #5496bd;  
 }
 
 .map {
