@@ -316,6 +316,60 @@ li.main-navigator-item:last-child {
   background-color: #766357;
 }
 
+@keyframes leave {
+  0%   {
+    transform: translateY(-300px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+/*@keyframes pulse {
+  0%, 100% {
+    width: 568px;
+  }
+  10%, 30%, 50%, 70%, 90% {
+    width: 518px;
+  }
+  20%, 40%, 60%, 80% {
+    width: 618px;
+  }
+}*/
+
 .booking-form {
   position: absolute;
   box-sizing: border-box;
@@ -325,6 +379,24 @@ li.main-navigator-item:last-child {
   padding: 55px;
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 5px rgba(0, 1, 1, 0.15);
+}
+
+.booking-form-close {
+  display: none;
+}
+
+.booking-form-show {
+  display: block;
+  animation: leave 1s;
+}
+
+.booking-form-error {
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  animation-name: swing;
+  animation-duration: 1s;
+  /*animation: swing 1s;*/
 }
 
 .ordering-line {
@@ -512,7 +584,13 @@ li.main-navigator-item:last-child {
 .map {
   width: 100%;
   height: 593px;
-  background: #88b2d2 url("../img/map.jpg") center no-repeat;
+  background: #88b2d2;
+}
+
+.map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 footer {

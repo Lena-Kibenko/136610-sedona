@@ -105,7 +105,7 @@
               <div class="ordering-line">
                 <label class="label-form" for="arrival-field">Дата заезда:</label>
                 <div class="ordering-field">
-                  <input type="text" name="arrival" id="arrival-field" value="24 апреля 2016">
+                  <input type="text" name="arrival" id="arrival-field" value="24 апреля 2016" required>
                   <div class="calendar-iсons">
                   </div>
                 </div>
@@ -113,7 +113,7 @@
               <div class="ordering-line">
                 <label class="label-form" for="departure-field">Дата выезда:</label>
                 <div class="ordering-field">
-                  <input type="text" name="departure" id="departure-field" value="4 июля 2016">
+                  <input type="text" name="departure" id="departure-field" value="4 июля 2016" required>
                   <div class="calendar-iсons">
                   </div>
               </div>
@@ -123,7 +123,7 @@
                   <label class="label-form" for="adults-field">Взрослые:</label>
                   <div class="ordering-people-field">
                     <span class="number"></span>
-                    <input class="number number-of" type="text" name="adults" id="adults-field" value="2">
+                    <input class="number number-of" type="text" name="adults" id="adults-field" value="2" required>
                     <span class="number"></span>
                   </div>
                 </div>
@@ -131,7 +131,7 @@
                   <label class="label-form label-form-children" for="children-field">Дети:</label>
                   <div class="ordering-people-field">
                     <span class="number"></span>
-                    <input class="number number-of" type="text" name="children" id="children-field" value="0">
+                    <input class="number number-of" type="text" name="children" id="children-field" value="0" required>
                     <span class="number"></span>
                   </div>
                 </div>
@@ -141,7 +141,10 @@
           </div>
         </div>
 
-        <div class="map"></div>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/d/embed?mid=180O1CiX8WZabDMv-Ijfqtc6DtIM">
+          </iframe>
+        </div>
       </main>
 
       <footer>
@@ -158,5 +161,7 @@
         </section>
       </footer>
     </div>
+    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>
