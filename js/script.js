@@ -9,10 +9,9 @@ var children = popup.querySelector("[name=children]");
 var storage = localStorage.getItem("adults");
 var storage = localStorage.getItem("children");
 
-document.addEventListener("DOMContentLoaded", function(event) {
-  event.preventDefault();
-  popup.classList.add("booking-form-close")
-});
+if (popup) {
+  popup.classList.add("booking-form-close");
+  }
 
 link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -44,3 +43,17 @@ window.addEventListener("keydown", function(event) {
     }
   }
 });
+
+function initMap() {
+  var sedona = {lat: 34.869867, lng: -111.760978};
+  var map = new google.maps.Map(document.querySelector(".map"), {
+    center: sedona,
+    scrollwheel: false,
+    zoom: 9,
+    disableDefaultUI: false
+  });
+  var marker = new google.maps.Marker({
+    position: sedona,
+    map: map
+  });
+}
