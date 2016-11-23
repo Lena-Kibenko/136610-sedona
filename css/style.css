@@ -182,6 +182,10 @@ li.main-navigator-item:last-child {
   color: #ffffff;
 }
 
+.second-reason .reason-name {
+  width: 151px;
+}
+
 .reason-number {
   margin-top: 0;
   margin-bottom: 21px;
