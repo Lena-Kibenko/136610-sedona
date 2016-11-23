@@ -199,6 +199,10 @@ li.main-navigator-item:last-child {
   text-align: center;
 }
 
+.second-reason .reason-description {
+  width: 75.8%;
+}
+
 .third-reason .reason-description {
   word-wrap: break-word;
 }
