@@ -331,8 +331,8 @@ li.main-navigator-item:last-child {
 
 @-webkit-keyframes leave {
   from {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
     opacity: 0;
   }
   to {
@@ -343,13 +343,13 @@ li.main-navigator-item:last-child {
 
 @keyframes leave {
   from {
-    -webkit-transform: translateY(-280px);
-            transform: translateY(-280px);
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
